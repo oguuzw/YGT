@@ -55,5 +55,5 @@ setInterval(() => {
 setInterval(() => {
     document.body.style.background = gradients[gradientIndex];
     gradientIndex = (gradientIndex + 1) % gradients.length;
-}, 3000);
+}, 2000);
 

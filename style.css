@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* alt kısım */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 1s;
+    position: relative;
+}
+
+#clickTextContainer {
+    margin-bottom: 30px;
+    padding: 15px 40px; /* yatayda biraz daha uzun */
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px; /* oval yapıldı */
+}
+
+#clickText {
+    font-size: 2em;
+    animation: blink 1.5s infinite;
+    user-select: none;
+    cursor: default;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+#photoContainer img {
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
